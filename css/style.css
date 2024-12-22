@@ -1,0 +1,18 @@
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; /* Menghilangkan celah antar elemen grid */
+    margin: 0; /* Pastikan margin grid tidak ada */
+    padding: 0; /* Hilangkan padding */
+}
+
+.gallery-item img {
+    width: 100%; /* Mengisi penuh kolom grid */
+    height: 100%; /* Mengisi penuh tinggi grid */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    display: block; /* Menghilangkan whitespace bawah gambar */
+    margin: 0; /* Hilangkan margin default */
+    padding: 0; /* Hilangkan padding default */
+    cursor: pointer;
+}
+
